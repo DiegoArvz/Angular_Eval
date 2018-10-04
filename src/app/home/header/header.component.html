@@ -1,0 +1,21 @@
+<div class="header-div">
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <h1 >La Bodega</h1>
+              </div>
+            <ul class="nav nav-tabs navbar-nav navbar-right">
+                <li><a href="#" routerLink="../home" routerLinkActive="active">
+                  <span class="glyphicon glyphicon-th"></span> </a></li>
+                <li>
+                  <a href="#" routerLink="./carrito" routerLinkActive="active" >
+                    <span class="glyphicon glyphicon-shopping-cart"></span><span *ngIf="showCarCounter" class="cart-counter">{{counter}}</span></a>
+                  </li>
+                <li><a><span class="glyphicon glyphicon-inbox"></span></a></li>
+                <li><a><span class="glyphicon glyphicon-log-out"></span></a></li>
+              </ul>
+        </div>
+        
+      </nav>
+</div>
+

@@ -1,0 +1,23 @@
+.img-responsive{
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.ver-mas-btn{
+    display: block;
+}
+
+.add-section{
+    display: block;
+    margin: 0 auto;
+}
+
+.add-btn{
+    margin: 10px;
+}
+
+.product-preview{
+    border-bottom: 1px solid rgb(230, 230, 230);
+    padding: 10px;
+}

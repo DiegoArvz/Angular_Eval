@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="catalog-search">
+            <label for="buscador"><h4 >¿Que estás buscando?</h4></label>
+            <input type="text" name="buscador" [(ngModel)]="search">
+        </div>
+        
+        <app-smallproduct 
+            *ngFor="let product of products" class="col-md-4" 
+            [isInSearch]="isInSearch(product.Nombre)"
+            [productName]=[product.Nombre]
+            [productPrice]=[product.Precio]
+            [productQuantity]=[product.Cantidad]>
+        </app-smallproduct>
+    </div>
+</div>
+

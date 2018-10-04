@@ -1,0 +1,17 @@
+<div *ngIf="isInSearch" class="row product-preview">
+  <div class="col-md-12">
+      <img class="img-responsive" src="{{imgUrl}}" alt="">
+  </div>
+  
+  
+  <h1>{{productName}}</h1>
+  <p>Precio: ${{productPrice}}</p>
+  <p>Unidades Disponibles: {{productQuantity}}</p>
+  <button class="btn btn-primary ver-mas-btn" (click)="onLoadLargeView(productName)">Ver Mas</button>
+  <div class="add-section">
+        <label for="cantidad"></label>
+        <input type="number" name="cantidad" value="1" (input)="onUpdateCounterProduct($event)"/>
+        <button class="btn btn-primary add-btn" (click)="onAddToCar()">Añadir</button>
+  </div>
+  
+</div>

@@ -1,0 +1,21 @@
+<div class="login" style="background-image: url('src/assets/images/login-fondo.jpg'); height: 100vh">
+    <div class="div-form" style=
+                                "width: 40%;
+                                margin:  0 auto;
+                                ">
+            <form style="padding-top: 40%">
+                    <div class="form-group">
+                        <h1 style="color:white; text-align: center">Iniciar Sesión</h1>
+                      <label for="exampleInputEmail1" style="color:white">Correo Electrónico</label>
+                      <input type="email" class="form-control" [(ngModel)]="email_input" #ctrl="ngModel" [ngModelOptions]="{standalone: true}" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                      
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1" style="color:white">Contraseña</label>
+                      <input type="password" class="form-control" [(ngModel)]="password_input" #ctrl="ngModel" [ngModelOptions]="{standalone: true}" id="exampleInputPassword1" placeholder="Password" required>
+                      <h3 *ngIf="show_error_message" style="color:red">Error al ingresar</h3>
+                    </div>
+                    <button (click)="uploadForm()" class="btn btn-primary">Ingresar</button>
+                  </form>
+    </div>       
+</div>

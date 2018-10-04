@@ -1,0 +1,17 @@
+<div>
+  <div class="row">
+      <app-shoppingproduct
+      *ngFor="let product of car" class="col-md-4" 
+      [productName]=[product.Nombre]
+      [productPrice]=[product.Precio]
+      [productQuantity]=[product.Cantidad]>
+      >
+    
+      </app-shoppingproduct>
+      
+  </div>
+  
+  <h1>Total: ${{total}}</h1>
+  <button (click)="onToPay()">Pagar</button>
+  
+</div>

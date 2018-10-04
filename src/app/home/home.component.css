@@ -1,0 +1,13 @@
+.home-div{
+    background-image: url("src/assets/images/main-fondo.jpg")
+}
+
+.main-content{
+    background-color: white;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.container-home{
+    width:100%;
+}
